@@ -84,3 +84,22 @@ for (const wrapRadio of wrapRadios) {
 
 search.addEventListener("keyup", update);
 
+const commentForm = document.getElementById("commentForm");
+const commentInput = document.getElementById("commentInput");
+const commentList = document.getElementById("commentList");
+
+commentForm.addEventListener('submit', function (event) {
+  event.preventDefault(); //prevent submit (page reload)
+
+  const commentText = commentInput.value.trim()
+
+  if (commentText != '') {
+    const newComment = document.createElement('div')
+    newComment.classList.add('comment')
+    newComment.textContent = commentText;
+
+    commentList.appendChild(newComment);
+
+    commentForm.value = ''
+  }
+})
