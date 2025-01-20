@@ -47,10 +47,12 @@ function shouldShowImage(image) {
 
 function filterWraps() {
   for (const image of images) {
+    const column = image.closest('[data-column="true"]');
+    console.log("Column for image:", column); // Debug the column
     if (shouldShowImage(image)) {
-      image.classList.remove("hidden");
+      column.style.display = "block";
     } else {
-      image.classList.add("hidden");
+      column.style.display = "none";
     }
   }
 }
@@ -81,3 +83,4 @@ for (const wrapRadio of wrapRadios) {
 }
 
 search.addEventListener("keyup", update);
+
