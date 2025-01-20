@@ -15,7 +15,7 @@ body {
 
 /* Navbar Hover Effect */
 .navbar-nav .nav-link:hover {
-  color: #007bff; /* Change color on hover to blue */
+  color: blue; /* Change color on hover to blue */
 }
 
 /* Navbar Highlight for Contact Us Button */
@@ -71,6 +71,10 @@ section {
 .services,
 .contact {
   text-align: center;
+}
+
+#comments {
+    text-align: center;
 }
 
 /* Smooth Scrolling */
