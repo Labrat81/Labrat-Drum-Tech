@@ -212,10 +212,10 @@
                   
                   <div class="form-floating mb-3">
                       <textarea name="Query" class="form-control-lg form-control col-12" placeholder="Query" id="floatingTextarea"></textarea>
-                      <label for="floatingTextarea">Query</label>
+                      <label for="floatingTextarea">Please your message here...</label>
                   </div>
-                  <div class="col">
-                      <button class="btn btn-light btn-lg mb-3" type="submit" value="Submit">Submit</button>
+                  <div class="col text-start">
+                      <button class="btn btn-primary" type="submit" value="Submit">Submit</button>
                   </div>
               </form>
           </div>
@@ -223,6 +223,18 @@
       </div>
     </section>
 
+    <section id="comments" class="container mt-5">
+      <h2>Leave a Comment</h2>
+      <form id="commentForm">
+        <div class="mb-3">
+          <textarea class="form-control" id="commentInput" placeholder="Write your comment..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Post Comment</button>
+      </form>
+      <div id="commentList" class="mt-4">
+        <!-- Comments will be displayed here -->
+      </div>
+    </section>
     
 
     <script
